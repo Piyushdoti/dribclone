@@ -1,0 +1,327 @@
+@font-face {
+    font-family: dribble;
+    src: url(./Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:dribble;
+
+}
+
+html, body {
+   width: 100%;
+   height: 100%;
+   font-family: 'Poppins', sans-serif;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+#main{
+    height: 100%;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+}
+#nav{
+    height:95px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-start;
+    gap:25px;
+    align-items: center;
+    position: relative;
+
+   
+}
+#nav h4{
+    font-size: 13px;
+}
+#nav img{
+   height: 35px;
+    margin:25px 25px;
+    padding:5px;
+}
+#nav #signup {
+    height: 100%;
+    width: 17%;
+    /* background-color: blueviolet; */
+   position: absolute;
+   right: 0px;
+    color: black;
+  
+   
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap:17px;
+}
+#nav #signup a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+#signup button{
+    background-color:rgb(33, 33, 33);
+    padding: 15px 25px;
+   
+    border-radius: 30px;
+    color: white;
+   
+      font-weight: 700;
+}
+#hero{
+    height: 430px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+   justify-content:space-between ;
+}
+#hero #lefthero{
+    height :430px;
+    width:710px;
+    /* background-color: red; */
+    padding: 50px;
+    font-weight: 700;
+    
+}   
+#hero #lefthero h1{
+    font-size: 50px;
+       transform: scaley(0.9);
+    font-family: dribble;
+    
+}
+#hero #lefthero h6{
+    font-size:16px;
+    font-family: dribble;
+    font-weight:700;
+}
+#hero #righthero{
+    height :430px;
+    width: 705px;
+    /* background-color: rgb(127, 36, 247); */
+    border-radius: 20px;
+    overflow: hidden ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+#hero #righthero #inner{
+    height: 100%;
+    width:90%;
+    /* background-color: black; */
+    margin-right: 10%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+#hero   #righthero video{
+    height: 112%;
+    background-size: cover;
+    border-radius: 30px;
+    
+
+
+
+}
+#hero #lefthero #search1{
+    height:200px;
+    width: 100%;
+    /* background-color: rgb(164, 236, 8); */
+    margin:10px ;
+    display:flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+
+    /* margin-top: 30px;
+    height: 70px;
+    width: 100%;
+   display: flex;
+    align-items: flex-start;
+  
+    padding: 20px;
+    gap:20px;
+    background-color: aquamarine; */
+}
+#bt{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+   
+}
+
+   
+
+#bt button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: white;
+    /* color: rgb(0, 0, 0); */
+    transition: all 0.3s ease-in-out ;
+ 
+    
+     
+}
+#bt button:hover{
+    box-shadow: 2px 2px 10px gray ;
+
+}
+#bt button:focus{
+    background-color: black;
+    color :white;
+}
+#bar{
+    height:50px;
+    width: 100%;
+    /* background-color:gray;  */
+    display: flex;
+  position: relative;
+    /* margin-top:13px; */
+    
+   
+
+}
+
+#bar input{
+    padding-left: 24px;
+    width: 100%;
+    border-radius: 30px;
+    border:3px solid  rgb(174, 174, 174);
+    background-color: aliceblue;
+}
+#bar :focus-within{
+    border-color: rgb(204, 141, 166);
+    outline: none;
+}
+#bar input:hover{
+    border-color: rgb(204, 141, 166) ;
+}
+#bar i{
+    position: absolute;
+    top: 3px;
+    font-size: 20px;
+    border-radius: 25px;
+    right: 12px;
+    padding:10px;
+    background-color: #ea4789;
+    color: white;
+}
+#popular{
+    /* margin-top: 15px; */
+    height: 50px;
+    width:100%;
+    /* background-color: rgb(255, 55, 129); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 12px;
+  
+   
+}
+#popular a{
+      text-decoration: none;
+      padding: 6px 10px;
+       background-color: rgb(255, 255, 255);
+      border-radius: 30px;
+      color: black;
+      font-weight: 400;
+      border:2px solid rgb(167, 167, 167);
+}
+#matchnow{
+    margin-top: 45px;
+    margin-left: 50px;
+    height:85px;
+    width:94%;
+    /* background-color:conic-gradient(red,yellow,blue); */
+    /* border: 2px solid wheat; */
+    border-radius:20px;
+    display: flex;  
+    padding-top:15px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    gap:35px
+    
+}
+#matchnow button{
+    border-radius: 50px;
+    padding-right: 20px;
+    padding-left: 8px;
+    font-weight: 700;
+  
+}
+#matchnow button i{
+    color: rgb(167, 68, 167);
+    font-size: 20px;
+    gap:20px;
+}
+#matchnow a{
+    text-decoration: none;
+    color:gray;
+    margin-top: 20px;
+    text-align: center;
+}
+#discover{
+    margin-left:55px;
+    height: 75px;
+    width:93%;
+    /* background-color:linear-gradient(blue,yellow); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    /* padding:30px; */
+
+   
+}
+#discover #plr button{
+    width:100px;
+    border-radius: 10px;
+    /* background-color: aquamarine; */
+    padding: 12px;
+  
+
+}
+#discover #subnav a{
+    padding:25px;
+    width: 400px;
+    color :black;
+    transition: all 0.3s ease-in;
+     text-decoration: none;
+       margin-bottom: 50px;
+     /* background-color: blue; */
+}
+#discover #filter button {
+    width: 100px;
+    /* background-color:linear-gradient(red,yellow) ; */
+    padding: 12px;
+    border-radius:30px;
+}
+#discover #subnav a:hover{
+    color:gray;
+    /* background-color: red; */
+}
+#filter button:hover{
+    border:2px solid gray;
+}
+.waste{
+    height: 300px;
+    width: 300px;
+    background-color: #ea4789;
+    background-image: url(https://cdn.dribbble.com/userupload/45201957/file/e97fffc8988ccb43f6f6e182f9a88989.jpg?format=webp&resize=450x338&vertical=center);
+    background-size:cover;
+    background-position:cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+
+}
